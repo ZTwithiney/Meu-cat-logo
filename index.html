@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Animes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Catálogo de Animes</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Os Animes Mais Famosos Hoje</h2>
+        
+        <!-- Campo de busca -->
+        <input type="text" id="search" placeholder="Buscar anime..." onkeyup="filterAnimes()">
+        
+        <div class="anime-list" id="anime-list">
+            <!-- Anime 1 -->
+            <div class="anime-card" data-name="Attack on Titan">
+                <img src="images/attack-on-titan.jpg" alt="Attack on Titan">
+                <h3>Attack on Titan</h3>
+                <p>Um anime épico de ação e mistério, onde a humanidade luta pela sobrevivência contra os titãs.</p>
+            </div>
+            <!-- Anime 2 -->
+            <div class="anime-card" data-name="Demon Slayer">
+                <img src="images/demon-slayer.jpg" alt="Demon Slayer">
+                <h3>Demon Slayer</h3>
+                <p>A história de Tanjiro, que busca vingança contra os demônios que destruíram sua família.</p>
+            </div>
+            <!-- Anime 3 -->
+            <div class="anime-card" data-name="One Piece">
+                <img src="images/one-piece.jpg" alt="One Piece">
+                <h3>One Piece</h3>
+                <p>Acompanhe Luffy e sua tripulação em sua busca pelo maior tesouro de todos os tempos, o One Piece.</p>
+            </div>
+            <!-- Anime 4 -->
+            <div class="anime-card" data-name="Boruto: Naruto Next Generations">
+                <img src="images/boruto.jpg" alt="Boruto: Naruto Next Generations">
+                <h3>Boruto: Naruto Next Generations</h3>
+                <p>Seguindo os passos de seu pai Naruto, Boruto Uzumaki tenta encontrar seu próprio caminho no mundo shinobi.</p>
+            </div>
+            <!-- Anime 5 -->
+            <div class="anime-card" data-name="Jujutsu Kaisen">
+                <img src="images/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen">
+                <h3>Jujutsu Kaisen</h3>
+                <p>Yuji Itadori se une à escola de feitiçaria para combater maldições, após ingerir um dos dedos de um demônio.</p>
+            </div>
+            <!-- Anime 6 -->
+            <div class="anime-card" data-name="My Hero Academia">
+                <img src="images/my-hero-academia.jpg" alt="My Hero Academia">
+                <h3>My Hero Academia</h3>
+                <p>Em um mundo onde a maioria das pessoas tem superpoderes, Izuku Midoriya sonha em ser um herói, mesmo sem poderes.</p>
+            </div>
+            <!-- Anime 7 -->
+            <div class="anime-card" data-name="Tokyo Revengers">
+                <img src="images/tokyo-revengers.jpg" alt="Tokyo Revengers">
+                <h3>Tokyo Revengers</h3>
+                <p>Takemichi Hanagaki volta no tempo para tentar salvar seu ex-namorado e resolver os problemas causados por gangues.</p>
+            </div>
+            <!-- Anime 8 -->
+            <div class="anime-card" data-name="Fullmetal Alchemist: Brotherhood">
+                <img src="images/fullmetal-alchemist.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                <h3>Fullmetal Alchemist: Brotherhood</h3>
+                <p>Dois irmãos, Edward e Alphonse Elric, buscam restaurar seus corpos após um experimento de alquimia fracassado.</p>
+            </div>
+            <!-- Anime 9 -->
+            <div class="anime-card" data-name="Death Note">
+                <img src="images/death-note.jpg" alt="Death Note">
+                <h3>Death Note</h3>
+                <p>Um jovem encontra um caderno misterioso com o poder de matar. Ele decide então usar isso a seu favor, e começa a matar todos os que ele considera criminosos. Mas, quando as coisas parecem ter saído do controle, o maior detetive do mundo é contratado.</p>
+            </div>
+            <!-- Anime 10 -->
+            <div class="anime-card" data-name="Hunter x Hunter">
+                <img src="images/hunter-x-hunter.jpg" alt="Hunter x Hunter">
+                <h3>Hunter x Hunter</h3>
+                <p>Gon Freecss deseja se tornar um Hunter para encontrar seu pai, um Hunter renomado que desapareceu misteriosamente.</p>
+            </div>
+            <!-- Anime 11 -->
+            <div class="anime-card" data-name="Bleach">
+                <img src="images/bleach.jpg" alt="Bleach">
+                <h3>Bleach</h3>
+                <p>Ichigo Kurosaki, um estudante de 15 anos que tem o poder de ver fantasmas. Ele descobre, no dia em que conhece a ceifadora de almas Rukia Kuchiki, que existe uma ordem encarregada de combater os espíritos que se tornaram malignos, os Hollows.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre o Catálogo</h2>
+        <p>Este catálogo contém os animes mais populares da atualidade, com uma breve descrição de cada um.</p>
+    </section>
+
+    <!-- Caixa de redirecionamento -->
+    <section id="redirect">
+        <div class="redirect-box">
+            <p>Se interessou por algum dos mangas acima? Acesse o link abaixo para ler direto do site oficial:</p>
+            <a href="https://mangaplus.shueisha.co.jp/updates" target="_blank" class="redirect-link">Acessar MangaPlus</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Animes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
